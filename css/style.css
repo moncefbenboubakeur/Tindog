@@ -3,6 +3,8 @@ html{
   margin: 0;
 }
 
+
+
 .gradient-background {
   background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
   background-size: 180% 180%;
@@ -16,6 +18,26 @@ html{
   50% {
     background-position: 100% 50%;
   }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-background {
+  background: linear-gradient(220deg, #245dc6, #385997, #21e6e9, #8442e9, #426ae9);
+  background-size: 300% 300%;
+  animation: gradient-animation 30s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
   100% {
     background-position: 0% 50%;
   }
